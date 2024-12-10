@@ -1,0 +1,285 @@
+/* styles.css */
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Search Box Styling */
+input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Alphabet Tabs */
+.tabs {
+    display: flex;                /* Flexbox layout */
+    gap: 10px;                    /* Space between items */
+    margin-bottom: 20px;          /* Space below the container */
+    flex-wrap: wrap;              /* Allows items to wrap onto new lines */
+    justify-content: center;      /* Centers the items horizontally */
+    align-items: center;          /* Optionally centers items vertically (if the container has a height) */
+}
+
+.tab {
+    cursor: pointer;
+    padding: 8px 16px;            /* Adjusted padding to make the box smaller */
+    border: 1px solid #ddd;       /* Tab border */
+    border-radius: 5px;           /* Rounded corners */
+    text-transform: uppercase;    /* Uppercase letters */
+    font-size: 0.8rem;            /* Use relative font size (based on root font-size) */
+    min-width: 20px;              /* Minimum width for consistency */
+    text-align: center;           /* Center text inside the tab */
+    transition: all 0.3s ease;    /* Smooth transition for resizing */
+}
+
+.tab:hover {
+    background-color: #fdf6b3;   /* Hover effect */
+}
+
+
+.active-tab {
+    font-weight: bold;
+    background-color: #213a4291;
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 8px; /* Add border radius to match the other divs */
+}
+
+.eligible {
+    color: green; /* Make eligible text green */
+}
+
+.not-eligible {
+    color: red; /* Make not eligible text red */
+}
+
+.eligibility {
+    display: block; /* Make eligibility appear on a new line */
+    font-size: 0.9em; /* Make the eligibility text slightly smaller */
+    margin-top: 5px;  /* Add some space between the item and eligibility */
+    font-weight: bold;
+}
+
+
+/* Show More Button */
+.show-more {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 3px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.logo img {
+    height: 18px; /* Adjust as needed */
+    width: auto;
+}
+
+.directory {
+    background-color: #ffffff;  /* Light gray background for the directory */
+    width: 90%;                  /* Adjust the width of the div (e.g., 80% of the parent, which is the body) */
+    max-width: 1200px;           /* You can set a max-width for large screens */
+    margin: 13px auto;           /* Center the div horizontally with a margin at the top and bottom */
+    padding: 20px;               /* Padding inside the div */
+    border-radius: 8px;          /* Optional: rounded corners for the div */
+    border: 1px solid #213a42;
+  }
+.hero-div {
+background-color: #213a42;  /* Light gray background for the directory */
+width: 90%;                  /* Adjust the width of the div (e.g., 80% of the parent, which is the body) */
+max-width: 1200px;           /* You can set a max-width for large screens */
+margin: 20px auto;           /* Center the div horizontally with a margin at the top and bottom */
+padding: 20px;               /* Padding inside the div */
+/* No Shadow
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Slight shadow under the div */
+border-radius: 8px;          /* Optional: rounded corners for the div */
+}
+/* Style the input box */
+#searchInput {
+    width: 100%;                  /* Makes the input take up the full width of the parent */
+    padding: 10px 15px;            /* Adds padding inside the input box */
+    font-size: 16px;               /* Increases font size for better readability */
+    border: 1px solid #e7e7e7;       /* Adds a light border */
+    border-radius: 4px;           /* Rounds the corners of the input */
+    margin-bottom: 20px;           /* Adds space between the input and other content below */
+    box-sizing: border-box;       /* Ensures padding and borders are included in the element’s total width and height */
+  }
+
+.hero-div h1 {
+font-size: 2rem;
+text-align: center;
+color: #ffffff
+}
+
+.hero-div p {
+font-size: 1rem;
+text-align: center;
+color: #ffffff;
+padding-left: 88px;
+padding-right: 88px;
+line-height: 2;
+}
+
+/* Popular Categories */
+.popular-categories {
+    text-align: center;
+    padding: 22px 0;
+    background-color: #ffffff;
+}
+
+.popular-categories h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1px;
+    margin-top: 0;
+    padding-top: 0;
+    color: #213a42;
+}
+
+
+.category-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.category-box {
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #213a42;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    min-width: 120px; /* Keep boxes uniform */
+    border: 1px solid #213a42;
+}
+
+.category-box:hover {
+    background-color: #fdf6b3;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #213a42;
+    color: white;
+}
+
+.filter-buttons button:hover {
+    background-color: #fdf6b3;
+}
+/* notoe */
+@media (max-width: 768px) {
+    #searchInput {
+        width: 100%;                  /* Makes the input take up the full width of the parent */
+        padding: 8px 15px;            /* Adds padding inside the input box */
+        font-size: 13px;               /* Increases font size for better readability */
+        border: 1px solid #e7e7e7;       /* Adds a light border */
+        border-radius: 4px;           /* Rounds the corners of the input */
+        margin-bottom: 12px;           /* Adds space between the input and other content below */
+        box-sizing: border-box;       /* Ensures padding and borders are included in the element’s total width and height */
+    }
+    .category-box {
+        padding: 6px 12px;
+        font-size: 0.5rem;
+        min-width: 88px;
+    }
+
+    .filter-buttons button {
+        padding: 6px 12px;
+    }
+    .hero-div {
+        margin: 3px auto;           /* Center the div horizontally with a margin at the top and bottom */
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 12px;
+        padding-bottom: 1px;
+    }
+    .hero-div p {
+        font-size: 0.8rem;
+        padding-left: 0;
+        padding-right: 0;
+        line-height: 1.6;
+    }
+
+    .hero-div h1 {
+        font-size: 1.4rem;
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+    .popular-categories h2 {
+        font-size: 1rem;
+        margin-bottom: 6px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .popular-categories {
+        padding: 0 0;
+        margin: 0;
+    }
+    .tab {
+        padding: 6px 8px;         /* Slightly smaller padding */
+        font-size: 0.6rem;         /* Slightly smaller font */
+    }
+    .tabs {
+        gap: 6px; 
+    }
+    .filter-buttons button {
+        padding: 10px 20px;
+        font-size: 0.7rem;
+        margin: 0 10px;
+        cursor: pointer;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #213a42;
+        color: white;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 3px 3px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    
+    .logo img {
+        height: 13px; /* Adjust as needed */
+        width: auto;
+    }
+}

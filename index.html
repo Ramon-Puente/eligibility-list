@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="truemed-logo.png" alt="Company Logo">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-div">
+                <h1>HSA Eligibility List</h1>
+                <p>
+                    Discover tax-free spending options for your HSA, FSA, and HRA. 
+                    This comprehensive guide lists eligible medical items and services 
+                    you can purchase with your healthcare spending account, helping 
+                    you maximize your tax-free healthcare dollars.
+                </p>
+                <!-- Search Box -->
+                <input type="text" id="searchInput" onkeyup="searchDirectory()" placeholder="Search for items...">
+            </div>
+        </section>
+        <!-- Popular Categories Section -->
+        <section class="popular-categories">
+            <h2>Popular Categories</h2>
+            <div class="category-boxes">
+                <a href="#" class="category-box">Fitness</a>
+                <a href="#" class="category-box">Supplements</a>
+                <a href="#" class="category-box">Saunas</a>
+                <a href="#" class="category-box">Red Light Therapy</a>
+                <a href="#" class="category-box">Cold Plunge</a>
+                <a href="#" class="category-box">Health Tech</a>
+            </div>
+        </section>
+        <section>
+            <div class="directory">
+                <!-- Alphabet Tabs Below Search Box -->
+                <div class="tabs">
+                    <div class="tab active-tab" onclick="filterByLetter('A')">A</div>
+                    <div class="tab" onclick="filterByLetter('B')">B</div>
+                    <div class="tab" onclick="filterByLetter('C')">C</div>
+                    <div class="tab" onclick="filterByLetter('D')">D</div>
+                    <div class="tab" onclick="filterByLetter('E')">E</div>
+                    <div class="tab" onclick="filterByLetter('F')">F</div>
+                    <div class="tab" onclick="filterByLetter('G')">G</div>
+                    <div class="tab" onclick="filterByLetter('H')">H</div>
+                    <div class="tab" onclick="filterByLetter('I')">I</div>
+                    <div class="tab" onclick="filterByLetter('J')">J</div>
+                    <div class="tab" onclick="filterByLetter('K')">K</div>
+                    <div class="tab" onclick="filterByLetter('L')">L</div>
+                    <div class="tab" onclick="filterByLetter('M')">M</div>
+                    <div class="tab" onclick="filterByLetter('N')">N</div>
+                    <div class="tab" onclick="filterByLetter('O')">O</div>
+                    <div class="tab" onclick="filterByLetter('P')">P</div>
+                    <div class="tab" onclick="filterByLetter('Q')">Q</div>
+                    <div class="tab" onclick="filterByLetter('R')">R</div>
+                    <div class="tab" onclick="filterByLetter('S')">S</div>
+                    <div class="tab" onclick="filterByLetter('T')">T</div>
+                    <div class="tab" onclick="filterByLetter('U')">U</div>
+                    <div class="tab" onclick="filterByLetter('V')">V</div>
+                    <div class="tab" onclick="filterByLetter('W')">W</div>
+                    <div class="tab" onclick="filterByLetter('X')">X</div>
+                    <div class="tab" onclick="filterByLetter('Y')">Y</div>
+                    <div class="tab" onclick="filterByLetter('Z')">Z</div>
+                </div>
+                <!-- Buttons for filtering eligibility -->
+                <div class="filter-buttons">
+                    <button onclick="filterEligibility('Eligible')">Eligible</button>
+                    <button onclick="filterEligibility('Not Eligible')">Not Eligible</button>
+                </div>
+                <!-- List of Directory Items -->
+                <ul id="directoryList"></ul>
+                <!-- Show More Button -->
+                <button onclick="showMore()">Show More</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Link to External JavaScript -->
+    <script src="directory.js"></script>
+
+</body>
+</html>
